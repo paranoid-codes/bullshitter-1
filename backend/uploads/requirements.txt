@@ -1,0 +1,7 @@
+pybit>=2.0.0
+python-dotenv==1.0.1
+click==8.1.7
+schedule==1.2.1
+requests==2.31.0
+questionary
+rich

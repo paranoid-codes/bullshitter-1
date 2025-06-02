@@ -1,0 +1,113 @@
+# Simple Uploader Mockup
+
+A basic mockup for an uploader application.
+
+## Installation
+
+```bash
+pnpm install
+```
+
+## Development
+
+Start the development server:
+
+```bash
+pnpm dev
+```
+
+purple theme 
+
+"   :root {
+    --background: 240 100% 98%;         /* #f5f5ff */
+    --foreground: 243 28% 22%;          /* #2a2a4a */
+    --card: 0 0% 100%;                  /* #ffffff */
+    --card-foreground: 243 28% 22%;     /* #2a2a4a */
+    --popover: 0 0% 100%;               /* #ffffff */
+    --popover-foreground: 243 28% 22%;  /* #2a2a4a */
+    --primary: 257 59% 57%;             /* #6e56cf */
+    --primary-foreground: 0 0% 100%;    /* #ffffff */
+    --secondary: 251 100% 95%;          /* #e4dfff */
+    --secondary-foreground: 252 34% 38%;/* #4a4080 */
+    --muted: 240 33% 97%;               /* #f0f0fa */
+    --muted-foreground: 244 13% 49%;    /* #6c6c8a */
+    --accent: 216 100% 93%;             /* #d8e6ff */
+    --accent-foreground: 243 28% 22%;   /* #2a2a4a */
+    --destructive: 348 100% 66%;        /* #ff5470 */
+    --destructive-foreground: 0 0% 100%;/* #ffffff */
+    --border: 240 20% 94%;              /* #e0e0f0 */
+    --input: 240 20% 94%;               /* #e0e0f0 */
+    --ring: 257 59% 57%;                /* #6e56cf */
+    --chart-1: 257 59% 57%;             /* #6e56cf */
+    --chart-2: 257 91% 77%;             /* #9e8cfc */
+    --chart-3: 240 80% 66%;             /* #5d5fef */
+    --chart-4: 253 86% 71%;             /* #7c75fa */
+    --chart-5: 247 47% 48%;             /* #4740b3 */
+    --sidebar: 240 33% 97%;             /* #f0f0fa */
+    --sidebar-foreground: 243 28% 22%;  /* #2a2a4a */
+    --sidebar-primary: 257 59% 57%;     /* #6e56cf */
+    --sidebar-primary-foreground: 0 0% 100%; /* #ffffff */
+    --sidebar-accent: 216 100% 93%;     /* #d8e6ff */
+    --sidebar-accent-foreground: 243 28% 22%; /* #2a2a4a */
+    --sidebar-border: 240 20% 94%;      /* #e0e0f0 */
+    --sidebar-ring: 257 59% 57%;        /* #6e56cf */
+    --font-sans: Inter, sans-serif;
+    --font-serif: Georgia, serif;
+    --font-mono: JetBrains Mono, monospace;
+    --radius: 0.5rem;
+    --shadow-2xs: 0px 4px 10px 0px hsl(240 30% 25% / 0.06);
+    --shadow-xs: 0px 4px 10px 0px hsl(240 30% 25% / 0.06);
+    --shadow-sm: 0px 4px 10px 0px hsl(240 30% 25% / 0.12), 0px 1px 2px -1px hsl(240 30% 25% / 0.12);
+    --shadow: 0px 4px 10px 0px hsl(240 30% 25% / 0.12), 0px 1px 2px -1px hsl(240 30% 25% / 0.12);
+    --shadow-md: 0px 4px 10px 0px hsl(240 30% 25% / 0.12), 0px 2px 4px -1px hsl(240 30% 25% / 0.12);
+    --shadow-lg: 0px 4px 10px 0px hsl(240 30% 25% / 0.12), 0px 4px 6px -1px hsl(240 30% 25% / 0.12);
+    --shadow-xl: 0px 4px 10px 0px hsl(240 30% 25% / 0.12), 0px 8px 10px -1px hsl(240 30% 25% / 0.12);
+    --shadow-2xl: 0px 4px 10px 0px hsl(240 30% 25% / 0.30);
+  }
+
+  .dark {
+    --background: 240 27% 8%;           /* #0f0f1a */
+    --foreground: 239 41% 92%;          /* #e2e2f5 */
+    --card: 237 25% 13%;                /* #1a1a2e */
+    --card-foreground: 239 41% 92%;     /* #e2e2f5 */
+    --popover: 237 25% 13%;             /* #1a1a2e */
+    --popover-foreground: 239 41% 92%;  /* #e2e2f5 */
+    --primary: 257 91% 77%;             /* #a48fff */
+    --primary-foreground: 240 27% 8%;   /* #0f0f1a */
+    --secondary: 245 33% 24%;           /* #2d2b55 */
+    --secondary-foreground: 246 100% 89%; /* #c4c2ff */
+    --muted: 240 40% 20%;               /* #222244 */
+    --muted-foreground: 240 14% 69%;    /* #a0a0c0 */
+    --accent: 240 33% 28%;              /* #303060 */
+    --accent-foreground: 239 41% 92%;   /* #e2e2f5 */
+    --destructive: 348 100% 66%;        /* #ff5470 */
+    --destructive-foreground: 0 0% 100%;/* #ffffff */
+    --border: 240 28% 25%;              /* #303052 */
+    --input: 240 28% 25%;               /* #303052 */
+    --ring: 257 91% 77%;                /* #a48fff */
+    --chart-1: 257 91% 77%;             /* #a48fff */
+    --chart-2: 233 37% 67%;             /* #7986cb */
+    --chart-3: 207 89% 68%;             /* #64b5f6 */
+    --chart-4: 174 45% 49%;             /* #4db6ac */
+    --chart-5: 326 100% 73%;            /* #ff79c6 */
+    --sidebar: 237 25% 13%;             /* #1a1a2e */
+    --sidebar-foreground: 239 41% 92%;  /* #e2e2f5 */
+    --sidebar-primary: 257 91% 77%;     /* #a48fff */
+    --sidebar-primary-foreground: 240 27% 8%; /* #0f0f1a */
+    --sidebar-accent: 240 33% 28%;      /* #303060 */
+    --sidebar-accent-foreground: 239 41% 92%; /* #e2e2f5 */
+    --sidebar-border: 240 28% 25%;      /* #303052 */
+    --sidebar-ring: 257 91% 77%;        /* #a48fff */
+    --font-sans: Inter, sans-serif;
+    --font-serif: Georgia, serif;
+    --font-mono: JetBrains Mono, monospace;
+    --radius: 0.5rem;
+    --shadow-2xs: 0px 4px 10px 0px hsl(240 30% 25% / 0.06);
+    --shadow-xs: 0px 4px 10px 0px hsl(240 30% 25% / 0.06);
+    --shadow-sm: 0px 4px 10px 0px hsl(240 30% 25% / 0.12), 0px 1px 2px -1px hsl(240 30% 25% / 0.12);
+    --shadow: 0px 4px 10px 0px hsl(240 30% 25% / 0.12), 0px 1px 2px -1px hsl(240 30% 25% / 0.12);
+    --shadow-md: 0px 4px 10px 0px hsl(240 30% 25% / 0.12), 0px 2px 4px -1px hsl(240 30% 25% / 0.12);
+    --shadow-lg: 0px 4px 10px 0px hsl(240 30% 25% / 0.12), 0px 4px 6px -1px hsl(240 30% 25% / 0.12);
+    --shadow-xl: 0px 4px 10px 0px hsl(240 30% 25% / 0.12), 0px 8px 10px -1px hsl(240 30% 25% / 0.12);
+    --shadow-2xl: 0px 4px 10px 0px hsl(240 30% 25% / 0.30);
+  }"
